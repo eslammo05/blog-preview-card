@@ -1,5 +1,10 @@
 *{
     margin:0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color:hsl(47, 88%, 63%);
 }
 @font-face {
   font-family: "Figtree";
@@ -8,7 +13,7 @@
     url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
 }
 body {
-    background-color:hsl(47, 88%, 63%);
+    background-color: var(--primary-color);
     margin:0 ;
     display:flex;
     justify-content: center;
@@ -26,7 +31,7 @@ main {
     padding: 20px;
     max-width:320px;
     border-radius: 30px;
-    gap:20px;
+    gap: 1.3rem;;
     border: 2px solid  hsl(0, 0%, 7%);
     box-shadow: 8px 8px 0px hsl(0, 0%, 7%);
 }
@@ -39,16 +44,15 @@ main {
 
 h2{
     color:hsl(0, 0%, 7%);
-    font-weight:800px;
+    font-weight:800;
     font-size: clamp(1.25rem, 5vw, 1.5rem);
    
 }
 span{
-    background-color:hsl(47, 88%, 63%);
+    background-color:var(--primary-color);
     border-radius:25px;
     width:fit-content;
-    padding:9px;
-
+padding: clamp(0.3rem, 1vw, 0.6rem);
 
 }
 p{
